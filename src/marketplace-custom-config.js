@@ -140,10 +140,33 @@ export const filters = [
           key: 'own_food_allowed',
           label: 'Own food allowed',
         },
+        {
+          key: 'OtherOption',
+          label: 'Other Option',
+        },
+      ],
+    },
+  },
+  {
+    id: 'view',
+    label: 'View',
+    type: 'SelectSingleFilter',
+    group: 'secondary',
+    queryParamNames: ['pub_view'],
+    config: {
+      options: [
+        { key: 'sea', label: 'Sea view' },
+        { key: 'lake', label: 'Lake view' },
+        { key: 'forest', label: 'Forest view' },
+        { key: 'garden', label: 'Garden view' },
+        { key: 'Option1', label: 'Option1 view' },
+        { key: 'Option2', label: 'Option2 view' },
       ],
     },
   },
 ];
+
+
 
 export const sortConfig = {
   // Enable/disable the sorting control in the SearchPage
