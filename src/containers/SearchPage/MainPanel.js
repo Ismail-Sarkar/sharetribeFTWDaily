@@ -250,6 +250,7 @@ class MainPanel extends Component {
                 showAsPopup
                 contentPlacementOffset={FILTER_DROPDOWN_OFFSET}
               />
+             
             );
           })}
         </SearchFiltersPrimary>

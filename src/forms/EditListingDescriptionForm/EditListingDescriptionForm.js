@@ -31,7 +31,7 @@ const EditListingDescriptionFormComponent = props => (
         updateInProgress,
         fetchErrors,
       } = formRenderProps;
-
+      console.log("1212",formRenderProps)
       const titleMessage = intl.formatMessage({ id: 'EditListingDescriptionForm.title' });
       const titlePlaceholderMessage = intl.formatMessage({
         id: 'EditListingDescriptionForm.titlePlaceholder',

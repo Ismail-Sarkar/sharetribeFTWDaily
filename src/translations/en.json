@@ -252,6 +252,14 @@
   "EditListingWizard.saveNewPricing": "Next: Availability",
   "EditListingWizard.tabLabelDescription": "Description",
   "EditListingWizard.tabLabelFeatures": "Amenities",
+  "EditListingCapacityPanel.title": "Capacity",
+  "EditListingWizard.tabLabelCapacity": "Capacity",
+  "EditListingCapacityForm.capacityPlaceholder": "Capacity Place Holder",
+  "EditListingWizard.saveEditCapacity": "Capacity Save",
+  "EditListingAgePanel.title": "Age",
+  "EditListingWizard.tabLabelAge": "Age",
+  "EditListingAgeForm.agePlaceholder": "Age Place Holder",
+  "EditListingWizard.saveEditAge": "Age Save",
   "EditListingWizard.tabLabelAvailability": "Availability",
   "EditListingWizard.tabLabelLocation": "Location",
   "EditListingWizard.tabLabelPhotos": "Photos",
@@ -1056,5 +1064,7 @@
   "UserCard.showFullBioLink": "more",
   "UserCard.viewProfileLink": "View profile",
   "UserDisplayName.banned": "Banned user",
-  "UserDisplayName.deleted": "Deleted user"
+  "UserDisplayName.deleted": "Deleted user",
+
+  "ListingPage.ageTitle": "Age"
 }

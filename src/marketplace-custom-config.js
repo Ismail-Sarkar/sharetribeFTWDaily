@@ -64,7 +64,7 @@ export const filters = [
     id: 'keyword',
     label: 'Keyword',
     type: 'KeywordFilter',
-    group: 'primary',
+    group: 'secondary',
     // Note: KeywordFilter is fixed filter,
     // you can't change "queryParamNames: ['keywords'],"
     queryParamNames: ['keywords'],
@@ -164,6 +164,32 @@ export const filters = [
       ],
     },
   },
+  {
+    id: 'capacity',
+    label: 'Capacity',
+    type: 'SelectSingleFilter',
+    group: 'secondary',
+    queryParamNames: ['pub_capacity'],
+    config: {
+      options: [
+        { key: '1to3', label: '1 to 3' },
+        { key: '4to6', label: '4 to 6' },
+        { key: '7to9', label: '7 to 9' },
+        { key: '10plus', label: '10 plus' },
+      ],
+    },
+  },
+  {
+    id: 'age',
+    label: 'Age',
+    type: 'PriceFilter',
+    group: 'primary',
+    queryParamNames: ['pub_age'],
+    config: {
+      min: 20,
+      max: 70,
+    },
+  },
 ];
 
 
@@ -194,4 +220,5 @@ export const sortConfig = {
     // for handling the internal state of the sorting dropdown.
     { key: 'relevance', label: 'Relevance', longLabel: 'Relevance (Keyword search)' },
   ],
+  
 };
