@@ -6,6 +6,7 @@ import {
   SelectSingleFilter,
   SelectMultipleFilter,
 } from '../../components';
+import AgeFilter from '../../components/AgeFilter/AgeFilter';
 
 /**
  * FilterComponent is used to map configured filter types
@@ -93,6 +94,29 @@ const FilterComponent = props => {
           onSubmit={getHandleChangedValueFn(useHistoryPush)}
           {...config}
           {...rest}
+        />
+      );
+      case 'age':
+      return (
+        // <KeywordFilter
+        //   id={componentId}
+        //   label={label}
+        //   name={name}
+        //   queryParamNames={queryParamNames}
+        //   initialValues={initialValues(queryParamNames)}
+        //   onSubmit={getHandleChangedValueFn(useHistoryPush)}
+        //   {...config}
+        //   {...rest}
+        // />
+        <AgeFilter
+        id={componentId}
+        label={label}
+        name={name}
+        queryParamNames={queryParamNames}
+        initialValues={initialValues(queryParamNames)}
+        onSubmit={getHandleChangedValueFn(useHistoryPush)}
+        {...config}
+        {...rest}
         />
       );
     default:

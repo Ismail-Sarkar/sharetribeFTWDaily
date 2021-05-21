@@ -110,6 +110,7 @@ class FilterPopup extends Component {
       keepDirtyOnReinitialize,
       contentPlacementOffset,
     } = this.props;
+    // console.log("child",children)
 
     const classes = classNames(rootClassName || css.root, className);
     const popupClasses = classNames(css.popup, { [css.isOpen]: this.state.isOpen });

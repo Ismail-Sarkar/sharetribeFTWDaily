@@ -168,7 +168,7 @@ export const filters = [
     id: 'capacity',
     label: 'Capacity',
     type: 'SelectSingleFilter',
-    group: 'secondary',
+    group: 'primary',
     queryParamNames: ['pub_capacity'],
     config: {
       options: [
@@ -182,13 +182,16 @@ export const filters = [
   {
     id: 'age',
     label: 'Age',
-    type: 'PriceFilter',
+    type: 'age',
     group: 'primary',
     queryParamNames: ['pub_age'],
     config: {
       min: 20,
       max: 70,
+      step: 5,
     },
+    // type: 'PriceFilter',
+
   },
 ];
 

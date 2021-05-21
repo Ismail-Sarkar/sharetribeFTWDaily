@@ -53,6 +53,7 @@ import SectionRulesMaybe from './SectionRulesMaybe';
 import SectionMapMaybe from './SectionMapMaybe';
 import css from './ListingPage.module.css';
 import SectionAge from './SectionAge';
+import SectionCapacity from './SectionCapacity';
 
 const MIN_LENGTH_FOR_LONG_WORDS_IN_TITLE = 16;
 
@@ -242,6 +243,14 @@ export class ListingPageComponent extends Component {
       title = '',
       publicData,
     } = currentListing.attributes;
+
+    
+    console.log("pub",publicData);
+    const capacityOptions = findOptionsForSelectFilter(
+      'capacity',
+      filterConfig
+    );
+    console.log("pubop",capacityOptions);
 
     const richTitle = (
       <span>
@@ -439,6 +448,7 @@ export class ListingPageComponent extends Component {
                   <SectionFeaturesMaybe options={amenityOptions} publicData={publicData} />
                   <SectionRulesMaybe publicData={publicData} />
                   <SectionAge publicData={publicData} />
+                  <SectionCapacity publicData={publicData} options={capacityOptions} />
                   <SectionMapMaybe
                     geolocation={geolocation}
                     publicData={publicData}
